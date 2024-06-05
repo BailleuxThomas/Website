@@ -13,7 +13,7 @@ for ($i=0; $i < 1; $i++) {
 
 <?php
 
-    ?>
+?>
 <div class="col-md-4">
    <div class="card mb-4 text-white bg-dark" style="height: 55vh;">
       <a href="img/tuto/<?= $data['image'] ?>" target="_blank" rel="noopener noreferrer"><img
@@ -21,15 +21,15 @@ for ($i=0; $i < 1; $i++) {
              alt="img/tuto/<?= $data['image'] ?>"></a>
    <div class="card-body">
       <h5 class="card-title"><?= $data['title'] ?></h5>
-         <p class="card-text"><?php echo substr(nl2br($data['content']), 0, 120).('...'); ?></p>
-      <a class="clickarticle2" href="index.php?page=tutos&id=<?= $data['id'] ?>">Lire l'article complet</a>
+      <p class="card-text"><?php echo substr(nl2br($data['content']), 0, 120).('...'); ?></p>
+      <a class="clickarticle2" href="index.php?page=tutos&id=<?= $data['id'] ?>">Lire l'article complet</a>  
    </div>
    </div>
 </div>
 
 <?php
-   
    }
+
 ?>
 </div>
 <a href="index.php?page=tutorial">Voir plus de contenu</a>

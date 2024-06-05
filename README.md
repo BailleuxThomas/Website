@@ -44,6 +44,12 @@ Login: tournoi@gmail.com
 Mdp: tournoi
 
 ```
+```bash
+Login: admin@gmail.com
+
+Mdp: admin
+
+```
 
 >« Un bug n’est jamais qu’une erreur.
 >Il représente quelque chose de plus grand.

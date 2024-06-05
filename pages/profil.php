@@ -24,33 +24,52 @@ if(isset($_POST['update'])){
       <form method="POST">
         <img src="./img/profil/<?php echo $users[6]?>" alt="./img/profil/<?php echo $users[6]?>" />
         <br>
-        <input type="file" name="" id="">
+        <?php if($users[0]=='9'){
+              echo "Vous ne pouvez pas changer la photo du compte Test";
+            }elseif($users[0]=='18'){
+              echo "Vous ne pouvez pas changer la photo du compte Tournoi";
+            }else{echo "<input type='file' name='' id=''>";}?>
       </div>
       <div class="col">
         <ul>
           <li>
-            Pseudo:
-          <input type="text" name="pseudo" placeholder="<?php echo $users[5]?>">
+          <?php if($users[0]=='9'){
+              echo "Vous ne pouvez pas changer le pseudo du compte Test";
+            }elseif($users[0]=='18'){
+              echo "Vous ne pouvez pas changer le pseudo du compte Tournoi";
+            }else{echo "Pseudo: "; echo "<input type='text' placeholder='$users[5]'>";}?>
           </li>
           <li>
-            Nom:
-            <input type="text" placeholder="<?php echo $users[1]?>">
+          <?php if($users[0]=='9'){
+              echo "Vous ne pouvez pas changer le nom du compte Test";
+            }elseif($users[0]=='18'){
+              echo "Vous ne pouvez pas changer le nom du compte Tournoi";
+            }else{echo "Nom: "; echo "<input type='text' placeholder='$users[1]'";}?>
           </li>
           <li>
-            Prénom:
-            <input type="text" placeholder="<?php echo $users[2]?>">
+          <?php if($users[0]=='9'){
+              echo "Vous ne pouvez pas changer le prénom du compte Test";
+            }elseif($users[0]=='18'){
+              echo "Vous ne pouvez pas changer le prénom du compte Tournoi";
+            }else{echo "Prénom: "; echo "<input type='text' placeholder='$users[2]'";}?>
           </li>
           <li>
             Age:
             <?php echo $users[3]?>
           </li>
           <li>
-            Adresse email:
-            <input type="text" placeholder="<?php echo $users[4]?>">
+          <?php if($users[0]=='9'){
+              echo "Vous ne pouvez pas changer l'adresse email du compte Test";
+            }elseif($users[0]=='18'){
+              echo "Vous ne pouvez pas changer l'adresse email du compte Tournoi";
+            }else{echo "Adresse email: "; echo "<input type='text' placeholder='$users[4]'";}?>
           </li>
           <li>
-            Nouveau mot de pass:
-            <input type="password" name="password">
+            <?php if($users[0]=='9'){
+              echo "Vous ne pouvez pas changer le mot de passe du compte Test";
+            }elseif($users[0]=='18'){
+              echo "Vous ne pouvez pas changer le mot de passe du compte Tournoi";
+            }else{echo "Nouveau mot de pass: "; echo "<input type='password' name='password>'";}?>
           </li>
         </ul>
         <input type="submit" name="update">

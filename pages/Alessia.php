@@ -1,18 +1,4 @@
 <?php
-
-
-
-// if (isset($_FILES['photo']['tmp_name'])) {
-//     $retour = copy($_FILES['photo']['tmp_name'], $_FILES['photo']['name']);
-//     move_uploaded_file($retour, "$uploads_dir/$_FILES");
-//     if($retour) {
-//         echo '<p>La photo a bien été envoyée.</p>';
-//         // echo '<img src="' . $_FILES['photo']['name'] . '">';
-//     }
-// }
-//   return $file_ary;
-// }
-
 $reponse = "";
 
 if(isset($_FILES['files'])){
@@ -24,7 +10,7 @@ function uploadFiles($files){
   if($files['files']['name'][0] == ""){
     return "S'il te plait choisi d'autre photos";
   }
-  $folder = 'Alessia/';
+  $folder = 'alessia/';
 
   $names = $files['files']['name'];
   $tmp_names = $files['files']['tmp_name'];
@@ -99,7 +85,7 @@ p {
     <div class="row justify-content-center">
         <form action="" method="post" enctype="multipart/form-data">
         <div id="drop-area">
-        <a class="justify-content-center" href="https://bailleuxthomas.com/Alessia/">Voici ta sauvegarde</a>
+        <a class="justify-content-center" href="https://bailleuxthomas.com/alessia/">Voici ta sauvegarde</a>
     <p class="text-center">Tu mets ici tout ce que tu veux</p>
     <input type="file" id="fileElem" name="files[]" multiple onchange="handleFiles(this.files)">
     <label class="button" for="fileElem">Select some files</label>
@@ -107,9 +93,8 @@ p {
     <progress id="progress-bar" max=100 value=0></progress>
     <div id="gallery"></div>
     </div>
-</div>
-<!-- <div class="note"><strong>Note: I've Removed the ability to actually upload files (it will error out silently since there is no error handler, so it'll still appear to work) because you guys were constantly filling up my Cloudinary account. Please <a href="https://cloudinary.com/invites/lpov9zyyucivvxsnalc5/j6iiupngdmwwwqspjtml">create your own account</a> and replace the "joezim007" and "ujpu6gyk" bits in the JavaScript with your own account's information.</strong></div> -->
   </div>
+</div>
 
 </form>
 
