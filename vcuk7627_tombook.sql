@@ -2,10 +2,10 @@
 -- version 5.1.2
 -- https://www.phpmyadmin.net/
 --
--- Hôte : localhost:3306
--- Généré le : dim. 19 mai 2024 à 18:24
--- Version du serveur : 5.7.24
--- Version de PHP : 7.3.19
+-- Host: localhost:3306
+-- Generation Time: Jun 05, 2024 at 09:50 PM
+-- Server version: 5.7.24
+-- PHP Version: 8.0.1
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,13 +18,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Base de données : `vcuk7627_tombook`
+-- Database: `vcuk7627_tombook`
 --
 
 -- --------------------------------------------------------
 
 --
--- Structure de la table `commentaires`
+-- Table structure for table `commentaires`
 --
 
 CREATE TABLE `commentaires` (
@@ -36,7 +36,7 @@ CREATE TABLE `commentaires` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Déchargement des données de la table `commentaires`
+-- Dumping data for table `commentaires`
 --
 
 INSERT INTO `commentaires` (`id`, `pseudo`, `commentaire`, `date`, `validate`) VALUES
@@ -50,7 +50,7 @@ INSERT INTO `commentaires` (`id`, `pseudo`, `commentaire`, `date`, `validate`) V
 -- --------------------------------------------------------
 
 --
--- Structure de la table `posts`
+-- Table structure for table `posts`
 --
 
 CREATE TABLE `posts` (
@@ -67,7 +67,7 @@ CREATE TABLE `posts` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Déchargement des données de la table `posts`
+-- Dumping data for table `posts`
 --
 
 INSERT INTO `posts` (`id`, `title`, `content`, `skill`, `writer`, `url`, `image`, `date`, `posted`, `url_github`) VALUES
@@ -82,7 +82,7 @@ INSERT INTO `posts` (`id`, `title`, `content`, `skill`, `writer`, `url`, `image`
 -- --------------------------------------------------------
 
 --
--- Structure de la table `tournois`
+-- Table structure for table `tournois`
 --
 
 CREATE TABLE `tournois` (
@@ -97,7 +97,7 @@ CREATE TABLE `tournois` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Déchargement des données de la table `tournois`
+-- Dumping data for table `tournois`
 --
 
 INSERT INTO `tournois` (`Id`, `Pseudo1`, `Pseudo2`, `Race1`, `Race2`, `Score1`, `Score2`, `Replay`) VALUES
@@ -108,7 +108,7 @@ INSERT INTO `tournois` (`Id`, `Pseudo1`, `Pseudo2`, `Race1`, `Race2`, `Score1`, 
 -- --------------------------------------------------------
 
 --
--- Structure de la table `tuto`
+-- Table structure for table `tuto`
 --
 
 CREATE TABLE `tuto` (
@@ -127,7 +127,7 @@ CREATE TABLE `tuto` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Déchargement des données de la table `tuto`
+-- Dumping data for table `tuto`
 --
 
 INSERT INTO `tuto` (`id`, `title`, `title2`, `content`, `skill`, `writer`, `url`, `image`, `video`, `date`, `posted`, `url_github`) VALUES
@@ -136,7 +136,7 @@ INSERT INTO `tuto` (`id`, `title`, `title2`, `content`, `skill`, `writer`, `url`
 -- --------------------------------------------------------
 
 --
--- Structure de la table `users`
+-- Table structure for table `users`
 --
 
 CREATE TABLE `users` (
@@ -152,18 +152,18 @@ CREATE TABLE `users` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Déchargement des données de la table `users`
+-- Dumping data for table `users`
 --
 
 INSERT INTO `users` (`id`, `pseudo`, `nom`, `prenom`, `email`, `age`, `password`, `image`, `role`) VALUES
 (9, 'Account Test', 'Visiteur', '', 'test@test.com', 28, '$2y$10$Zp2k2PcRUlvOaEiGVwWVYeCJYEmNBO8xp1Cyey4eTLGP4UuIRTHZe', 'logo.png', 'membre'),
-(18, 'Tournoi', 'tournoi', 'tournoi', 'tournoi@gmail.com', 32, '$2y$10$wnEwssOwedRMTfQ7FMrjUe6407adCMV2/.EMBg91TWdd/A0934LeK', 'logo.png', 'tournois'),
-(19, 'Admin', 'Visiteur (Admin)', '', 'admin@gmail.com', 28, '$2y$10$zlaikz/UV748DhS.SlVxQeM.B.UpuaAvr4LAL4X.W10KKpZmj4qiW', 'logo.png', 'admin');
+(18, 'Tournoi', 'Tournoi', 'Tournoi', 'tournoi@gmail.com', 32, '$2y$10$wnEwssOwedRMTfQ7FMrjUe6407adCMV2/.EMBg91TWdd/A0934LeK', 'logo.png', 'tournois'),
+(19, 'Admin', 'admin', 'admin', 'admin@gmail.com', 32, '$2y$10$1L640Dulh5CBo5YIt.4kzONr0nQWks64O1/OdhBtkHfTh3Yu0Gl4u', 'logo.png', 'admin');
 
 -- --------------------------------------------------------
 
 --
--- Structure de la table `video`
+-- Table structure for table `video`
 --
 
 CREATE TABLE `video` (
@@ -176,7 +176,7 @@ CREATE TABLE `video` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Déchargement des données de la table `video`
+-- Dumping data for table `video`
 --
 
 INSERT INTO `video` (`id`, `title`, `content`, `img`, `url`, `rank`) VALUES
@@ -186,81 +186,81 @@ INSERT INTO `video` (`id`, `title`, `content`, `img`, `url`, `rank`) VALUES
 (4, '1V4 avec VIPER !', '', 'valorant.png', '1V4VIPERDIA3.mp4', 'Diamand 3');
 
 --
--- Index pour les tables déchargées
+-- Indexes for dumped tables
 --
 
 --
--- Index pour la table `commentaires`
+-- Indexes for table `commentaires`
 --
 ALTER TABLE `commentaires`
   ADD PRIMARY KEY (`id`);
 
 --
--- Index pour la table `posts`
+-- Indexes for table `posts`
 --
 ALTER TABLE `posts`
   ADD PRIMARY KEY (`id`);
 
 --
--- Index pour la table `tournois`
+-- Indexes for table `tournois`
 --
 ALTER TABLE `tournois`
   ADD PRIMARY KEY (`Id`);
 
 --
--- Index pour la table `tuto`
+-- Indexes for table `tuto`
 --
 ALTER TABLE `tuto`
   ADD PRIMARY KEY (`id`);
 
 --
--- Index pour la table `users`
+-- Indexes for table `users`
 --
 ALTER TABLE `users`
   ADD PRIMARY KEY (`id`);
 
 --
--- Index pour la table `video`
+-- Indexes for table `video`
 --
 ALTER TABLE `video`
   ADD PRIMARY KEY (`id`);
 
 --
--- AUTO_INCREMENT pour les tables déchargées
+-- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT pour la table `commentaires`
+-- AUTO_INCREMENT for table `commentaires`
 --
 ALTER TABLE `commentaires`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
 
 --
--- AUTO_INCREMENT pour la table `posts`
+-- AUTO_INCREMENT for table `posts`
 --
 ALTER TABLE `posts`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
--- AUTO_INCREMENT pour la table `tournois`
+-- AUTO_INCREMENT for table `tournois`
 --
 ALTER TABLE `tournois`
   MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
--- AUTO_INCREMENT pour la table `tuto`
+-- AUTO_INCREMENT for table `tuto`
 --
 ALTER TABLE `tuto`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
--- AUTO_INCREMENT pour la table `users`
+-- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 
 --
--- AUTO_INCREMENT pour la table `video`
+-- AUTO_INCREMENT for table `video`
 --
 ALTER TABLE `video`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
