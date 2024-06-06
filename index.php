@@ -37,9 +37,8 @@ $br = "<br>";
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
-    <!--Let browser know website is optimized for mobile-->
-    <meta name="viewport" http-equiv="Content-Type" content="text/html;charset=ISO-8859-15;charset=utf-9" />
-    <!-- <link rel="icon" type="image/png" href="assets/img/mrrobot_rounded.png"> -->
+    <meta http-equiv="Content-Type" content="text/html,charset=ISO-8859-15,utf-9">
+    <script src="./js/signature.js"></script>
     <title>TomBook 🐷</title>
 </head>
 <body>
