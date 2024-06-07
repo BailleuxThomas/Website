@@ -48,6 +48,7 @@ $br = "<br>";
     exit;
     }
     include 'body/topbar.php';
+    include 'body/viewer.php';
     ?>
     <?php
         include 'pages/' . $page . '.php';
