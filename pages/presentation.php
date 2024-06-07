@@ -26,7 +26,7 @@ if (isset($_SESSION['membre'])) {
     
             <hr>
           <p>Bailleux Thomas</p>
-          <a href="mailto:bailleuxthomas.dev@gmail.com" title="Contactez-moi par mail">bailleuxthomas.dev@gmail.com</a>
+          <a href="mailto:thomasbailleux2@gmail.com" title="Contactez-moi par mail">thomasbailleux2@gmail.com</a>
           <br>
           <a href="https://www.linkedin.com/in/bailleuxthomas-dev/" target="_blank" title="Clique hésite pas!">linkedin.com/in/bailleuxthomas-dev/</a>
           <br>

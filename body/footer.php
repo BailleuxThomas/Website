@@ -17,7 +17,6 @@
                     <ul>
                         <li class="liste"><a rel="noopener noreferrer" target="_blank" href="https://bailleuxthomas.netlify.app/"><i class="fas fa-film"></i> CineTom</a></li>
                         <li class="liste"><a rel="noopener noreferrer" target="_blank" href="https://github.com/BailleuxThomas"><i class="fab fa-github"></i> Github</a></li>
-                        <li class="liste"><a rel="noopener noreferrer" target="_blank" href="https://Twitch.tv/starstouuf"><i class="fab fa-twitch"></i> Twitch.tv/starstouuf</a></li>
                         <li class="liste"><a rel="noopener noreferrer" target="_blank" href="https://www.linkedin.com/in/bailleuxthomas-dev/" ><i class="fab fa-linkedin"></i> Linkedin</a></li>
                         <li class="liste"><a rel="noopener noreferrer" target="_blank" href="https://gitlab.com/BailleuxThomas" ><i class="fab fa-gitlab"></i> Gitlab</a></li>
                     </ul>
