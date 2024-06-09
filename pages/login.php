@@ -1,5 +1,7 @@
 <?php
 
+include 'body/viewer.php';
+
 if (isset($_SESSION['membre'])) {
     header("Location:index.php?page=dashboard");
 }

@@ -7,7 +7,7 @@ ini_set('log_errors', 1);
 // ini_set('error_log', dirname(__file__) . '/log_error_php.txt');
 
 include './functions/main-functions.php';
-include './functions/tuto.func.php';
+
 
 function allmembers(){
     global $db;
@@ -48,7 +48,6 @@ $br = "<br>";
     exit;
     }
     include 'body/topbar.php';
-    include 'body/viewer.php';
     ?>
     <?php
         include 'pages/' . $page . '.php';

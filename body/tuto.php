@@ -10,10 +10,6 @@ for ($i=0; $i < 1; $i++) {
 
 
 ?>
-
-<?php
-
-?>
 <div class="col-md-4">
    <div class="card mb-4 text-white bg-dark" style="height: 55vh;">
       <a href="img/tuto/<?= $data['image'] ?>" target="_blank" rel="noopener noreferrer"><img

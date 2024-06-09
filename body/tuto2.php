@@ -1,7 +1,7 @@
 <?php
 
 // Chemin du fichier de compteur
-$counter_file = 'index.txt';
+$counter_file = 'tuto.txt';
 
 // Lire le compteur actuel
 if (file_exists($counter_file)) {

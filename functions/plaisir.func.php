@@ -1,7 +1,7 @@
 <?php
 
 // Chemin du fichier de compteur
-$counter_file = 'index.txt';
+$counter_file = 'plaisir.txt';
 
 // Lire le compteur actuel
 if (file_exists($counter_file)) {
@@ -11,11 +11,7 @@ if (file_exists($counter_file)) {
     $counter = 0;
 }
 
-// Incrémenter le compteur
-$counter++;
-
-// Enregistrer le nouveau compteur dans le fichier
-file_put_contents($counter_file, $counter);
-
+// Afficher le compteur
+echo "Nombre de vues de la page plaisir.php : " . $counter;
 
 ?>

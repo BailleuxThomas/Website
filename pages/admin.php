@@ -1,6 +1,27 @@
 <?php
 include './functions/admin.func.php';
 ?>
+
+<div class="container">
+  <div class="row">
+    <div class="col">
+    <? include './functions/index.func.php';?>
+    </div>
+    <div class="col">
+    <? include './functions/blog2.func.php';?>
+    </div>
+    <div class="col">
+    <? include './functions/tuto2.func.php';?>
+    </div>
+    <div class="col">
+    <? include './functions/plaisir.func.php';?>
+    </div>
+  </div>
+</div>
+
+<hr>
+
+
 <div class="container">
   <div class="row">
     <div class="col">

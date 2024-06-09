@@ -10,7 +10,7 @@ if (isset($_SESSION['membre'])) {
     exit;
 }
 
-
+include 'body/plaisir.php';
 
 ?>
 

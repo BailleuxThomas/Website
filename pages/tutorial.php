@@ -1,5 +1,8 @@
 <?php
 
+include 'body/tuto2.php';
+
+
 global $db;
 
 $req= $db->query('SELECT * FROM tuto');

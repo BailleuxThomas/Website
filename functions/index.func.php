@@ -11,11 +11,7 @@ if (file_exists($counter_file)) {
     $counter = 0;
 }
 
-// Incrémenter le compteur
-$counter++;
-
-// Enregistrer le nouveau compteur dans le fichier
-file_put_contents($counter_file, $counter);
-
+// Afficher le compteur
+echo "Nombre de vues de la page index.php : " . $counter;
 
 ?>

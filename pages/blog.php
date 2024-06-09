@@ -9,7 +9,7 @@ if (isset($_SESSION['membre'])) {
     echo('<script language="javascript">document.location="index.php?page=dashboard"</script>');
     exit;
 }
-
+include './body/blog.php';
 ?>
 
 
