@@ -101,10 +101,12 @@ p {
 .button:hover {
   background: yellow;
   color: black;
-  transform: translate(-10px,10px);
 }
 #fileElem {
   display: none;
+}
+.menu-left{
+  display:none;
 }
 
 
@@ -116,7 +118,7 @@ p {
     <div class="row justify-content-center">
         <form action="" method="post" enctype="multipart/form-data">
         <div id="drop-area">
-        <a class="justify-content-center" href="https://bailleuxthomas.com/alessia/">Voici ta sauvegarde</a>
+        <a class="justify-content-center" href="./alessia/">Voici ta sauvegarde</a>
     <p class="text-center">Tu mets ici tout ce que tu veux</p>
     <input type="file" id="fileElem" name="files[]" multiple onchange="handleFiles(this.files)">
     <label class="button" for="fileElem">Select some files</label>
