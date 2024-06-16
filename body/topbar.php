@@ -37,6 +37,7 @@ while($members = $person->fetch()){
         <img class="imagetopbar" src="img/posts/astro.png" alt="">
         <li class="litopbar"><a href="index.php?page=cgu">CGU</a></li>
         <?php if(isset($_SESSION['membre'])){echo '<li class="litopbar"><a href="index.php#contact">Contact</a></li>'; }?>
+        <?php if(isset($_SESSION['membre'])){if($users[7] === 'alessia'){echo '<li class="litopbar"><a href="index.php?page=alessia">Alessia</a></li>';}}?>
         <?php if(isset($_SESSION['membre'])){if($users[7] === 'admin'){echo '<li class="litopbar"><a href="index.php?page=admin">Admin</a></li>';}}?>
       </ul>
     </div>
